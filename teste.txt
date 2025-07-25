@@ -1,0 +1,1 @@
+Meu primeiro arquivo enviado para o GitHub usando VS Code !
