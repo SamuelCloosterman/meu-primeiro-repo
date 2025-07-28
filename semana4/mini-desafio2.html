@@ -1,4 +1,5 @@
-/<html>
+<!DOCTYPE html>
+<html>
 <head>
     <title>Mini Desafio</title>
 </head>
@@ -6,30 +7,38 @@
 <body>
     <h1>Que dia da semana é hoje?</h1>
 
-    <h1> id="mensagem"></h1>
+    <h1 id="mensagem"></h1>
     
     <script>
         const hoje = new Date();
-        const diaSemana = hoje.getDay
+        const diaSemana = hoje.getDay(); // você esqueceu os parênteses aqui
+        let mensagem = ""; // você não tinha declarado a variável
 
-        switch(diaSemana){
+        switch(diaSemana) {
             case 1: 
-            mensagem = "Hoje é Segunda."
+                mensagem = "Hoje é Segunda.";
+                break;
             case 2: 
-            mensagem = "Hoje é Terça."
+                mensagem = "Hoje é Terça.";
+                break;
             case 3: 
-            mensagem = "Hoje é Quarta."
+                mensagem = "Hoje é Quarta.";
+                break;
             case 4: 
-            mensagem = "Hoje é Quinta."
+                mensagem = "Hoje é Quinta.";
+                break;
             case 5: 
-            mensagem = "Hoje é Sexta."
+                mensagem = "Hoje é Sexta.";
+                break;
             case 6: 
-            mensagem = "Hoje é Sábado."
+                mensagem = "Hoje é Sábado.";
+                break;
             case 0: 
-            mensagem = "Hoje é Domingo."
+                mensagem = "Hoje é Domingo.";
+                break;
         }
 
-        document.getElementById("mensagem").innerText = mensagem
+        document.getElementById("mensagem").innerText = mensagem;
     </script>
 </body>
 </html>
