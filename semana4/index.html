@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ela pede bença</title>
+</head>
+<body>
+    <h1>Samuel Cloosterman</h1>
+
+    <p id="data"></p>
+
+    <button onclick="mudarCor()">Clique aqui para mudar a cor</button>
+
+    <script>
+        // Mostrar data atual
+        const agora = new Date();
+        document.getElementById("data").innerText = agora.toLocaleString();
+
+        // Função para mudar cor de fundo
+        function mudarCor() {
+            // Array de cores
+            const cores = ["#f1f0f0", "#d0f0c0", "#c0d0f0", "#f0c0d0"];
+            // Cor aleatória
+            const aleatoria = cores[Math.floor(Math.random() * cores.length)];
+            // Mudar fundo
+            document.body.style.backgroundColor = aleatoria;
+        }
+    </script>
+</body>
+</html>
