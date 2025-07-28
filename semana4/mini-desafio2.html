@@ -1,0 +1,35 @@
+/<html>
+<head>
+    <title>Mini Desafio</title>
+</head>
+
+<body>
+    <h1>Que dia da semana é hoje?</h1>
+
+    <h1> id="mensagem"></h1>
+    
+    <script>
+        const hoje = new Date();
+        const diaSemana = hoje.getDay
+
+        switch(diaSemana){
+            case 1: 
+            mensagem = "Hoje é Segunda."
+            case 2: 
+            mensagem = "Hoje é Terça."
+            case 3: 
+            mensagem = "Hoje é Quarta."
+            case 4: 
+            mensagem = "Hoje é Quinta."
+            case 5: 
+            mensagem = "Hoje é Sexta."
+            case 6: 
+            mensagem = "Hoje é Sábado."
+            case 0: 
+            mensagem = "Hoje é Domingo."
+        }
+
+        document.getElementById("mensagem").innerText = mensagem
+    </script>
+</body>
+</html>

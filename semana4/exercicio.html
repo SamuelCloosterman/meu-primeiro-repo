@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mini Exercício JS</title>
+  <title>Mensagem com Hora</title>
 </head>
 <body>
 
-  <h1>Exercício JavaScript</h1>
-
-  <!-- Aqui a mensagem vai aparecer -->
+  <h1>Saudação automática</h1>
   <p id="mensagem"></p>
 
   <script>
-    // Escreve um texto dentro da tag <p id="mensagem">
-    document.getElementById("mensagem").innerText = "Olá, Samuel! Esse é meu primeiro texto com JS!";
+    const agora = new Date();
+    const hora = agora.getHours();
+
+    let mensagem = "";
+
+    if (hora >= 6 && hora < 12) {
+      mensagem = "Bom dia, Samuel!";
+    } else if (hora >= 12 && hora < 18) {
+      mensagem = "Boa tarde, Samuel!";
+    } else {
+      mensagem = "Boa noite, Samuel!";
+    }
+
+    document.getElementById("mensagem").innerText = mensagem;
   </script>
 
 </body>
