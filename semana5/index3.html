@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flexbox na prática</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 150px;
+      border: 2px solid cyan;
+      margin-top: 20px;
+    }
+
+    .caixa {
+      background-color: royalblue;
+      padding: 40px;
+      font-size: 20px;
+      border-radius: 12px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aprendendo Flexbox</h1>
+
+  <div class="container">
+    <div class="caixa">1</div>
+    <div class="caixa">2</div>
+    <div class="caixa">3</div>
+  </div>
+</body>
+</html>
